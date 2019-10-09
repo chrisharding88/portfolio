@@ -1,0 +1,27 @@
+
+#name{
+    text-align: center;
+}
+
+#developerName{
+    font-size: 25px;
+}
+
+#profile{
+    width: 150px;
+    border-radius: 100%;
+}
+
+#links{
+    border-top-style: solid;
+    border-bottom-style: solid;
+    text-align: center;
+    padding: 20px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 30px;
+    cursor: pointer;
+}
