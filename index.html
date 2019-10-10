@@ -15,8 +15,8 @@
         <img src="assets/images/chris.jpg" id="profile" alt="Photo of Chris Harding"/>
         <p id="developerName">Christopher Harding</p>
         <div class="logos">
-           <a href="https://github.com/chrisharding88"><img src ="assets/images/github.png" id="logo1" alt="githublogo"/></a>
-            <a href="https://www.linkedin.com/in/christopher-harding-44775463"><img src ="assets/images/linked-in.png" id="logo2" alt="Linked-In logo"/></a>
+           <a href="https://github.com/chrisharding88"><img src ="assets/images/github.png" id="logo1" class="sociallogo" alt="githublogo"/></a>
+            <a href="https://www.linkedin.com/in/christopher-harding-44775463"><img src ="assets/images/linked-in.png" id="logo2" class="sociallogo" alt="Linked-In logo"/></a>
         </div>
     </div>
     <div id = "links">
@@ -28,21 +28,21 @@
         </nav>
     </div>
 
-<section class="box">
+<section class="box" id ="#box1">
     <div id = "aboutMe">
-        <h1>About Me</h1>
-        <div class="content">
+        <h1 id ="header1">About Me</h1>
+        <div id ="content1">
         <p>Hey guys, I'm Christopher Harding and I'm an a aspiring web developer based in Upper Darby, PA. Being a web developer has been a passion of mine since 2017. 
             I like to design and make sure the websites and apps have efficient quality. 
-
         </p>
         </div>
     </div>
 </section>
 
-<section class="box">
+<section class="box" id ="#box2">
     <div id = "projects">
-        <h1>Projects</h1>
+        <h1 id ="header2">Projects</h1>
+      <div id="content2">
         <div id ="crystalCollector">
            <img src="assets/images/crystalCollector.png" id="crystalCollectorScreenShot" class="webScreenshot"/><a href="https://chrisharding88.github.io/crystalCollector/" class="webLinks">Crystal Collector</a>
         </div>
@@ -52,20 +52,22 @@
         <div id ="nickelodeonWordGuess">
              <img src="assets/images/nickelodeonWordGuess.png" id="nickelodeonScreenShot" class="webScreenshot"/><a href="https://chrisharding88.github.io/crystalCollector/" class="webLinks">Nickelodeon Word Guess</a>
          </div>
+        </div>
     </div>
 </section>
 
-<section class="box">
+<section class="box" id ="#box3">
     <div id = "resume">
-        <h1>Resume</h1>
+        <h1 id="header3">Resume</h1>
         <div id="resumeBox"><a href="assets/images/Chris_Harding_Resume.pdf" class="resumeLink">View Resume</a></div>
     </div>
 </section>
 
-<section class="box">
+<section class="box" id ="#box4">
     <div id = "contact">
-        <h1>Contact</h1>
-        <form>
+        <h1 id ="header4">Contact</h1>
+        <div id="content3">
+            <form>
                     <div class="form-group">
                         <label for="Name">Name</label>
                         <input type="text" name="FirstName" class="form-control">
@@ -79,10 +81,13 @@
                          <textarea id ="Message" rows="6" cols="65" class="form-control" id="comment"></textarea>
                      </div>
                <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
+            </form>
+         </div>
     </div>
 </section>
 
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="assets/portfolio.js"></script>
 </body>
 </html>

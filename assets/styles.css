@@ -1,8 +1,21 @@
 body{
     font-family: 'Orbitron', sans-serif;
-
+    max-height: 1200px;
 }
 
+.box{
+    border: 2px solid #ffffff;
+    background-color: #0071e3;
+    height:300px;
+    cursor: pointer;
+}
+
+
+h1{
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+}
 
 
 #name{
@@ -10,6 +23,7 @@ body{
     text-align: center;
     color: #ffffff;
 }
+
 
 #developerName{
     font-size: 45px;
@@ -56,11 +70,15 @@ a.resumeLink{
     height: 150px;
 }
 
-.box{
-    border: 2px solid #ffffff;
-    background-color: #0071e3;
 
+#resumeBox{
+    display: flex;
+    border: 2px solid #ffffff;
+    width: 500px;
+    justify-content: center;
+    margin: 0 auto;
 }
+
 
 
 
