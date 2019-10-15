@@ -1,45 +1,36 @@
 $(document).ready(function(){
 
- var showcontent = false;
+    /*Hides the content when the browser opens*/ 
+    $('#paragraph').hide();
+    $('#appLinks').hide();
+    $('#form').hide();
 
-$("#content1").hide();
-$("#content2").hide();
-$("#content3").hide();
+    // When the boxes are clicked it displays the content
+$('#aboutMe').click(function(){
+    $('#paragraph').toggle(1500);
+});
+$('#projects').click(function(){
+    $('#appLinks').toggle(1500);
+});
 
-
-$('.box').click(function() {
-
- if (showcontent) { 
-    showcontent = true;
-    $('#content1').show();
-    $('#header1').hide();
-    $('#content2').show();
-    $('#header2').hide();
-    $('#content3').show();
-    $('#header4').hide();
-
-} else {
-    showcontent = false;
-        $('#content1').hide();
-        $('#header1').show();
-        $('#content2').hide();
-        $('#header2').show();
-        $('#content3').hide();
-        $('#header4').show();
-
-}
-
-
-
+$('#contact').click(function(){
+    $('#form').toggle(1500);
 });
 
 
 
 
 
+var linkScroll = $(".scroll");
 
-
-
+// When the link is clicked is scrolls to the section
+linkScroll.click(function(event){
+    event.preventDefault();
+    $('body, html').animate({
+        scrollTop:$(this.hash).offset().aboutMe
+    }, 1000);
+});
 
 
 });
+
